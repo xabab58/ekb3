@@ -1,2 +1,20 @@
-hellow world KB3
-2 kube
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page URL</title>
+</head>
+<body>
+    <h1>Current URL</h1>
+    <p id="url"></p>
+
+    <script>
+        // Получаем текущий URL
+        const currentURL = window.location.href;
+
+        // Вставляем URL в элемент <p>
+        document.getElementById('url').textContent = currentURL;
+    </script>
+</body>
+</html>
