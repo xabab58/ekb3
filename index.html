@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page URL</title>
-</head>
-<body>
-    <h1>Current URL</h1>
-    <p id="url"></p>
-
+    <title>Отображение URL</title>
     <script>
-        // Получаем текущий URL
-        const currentURL = window.location.href;
-
-        // Вставляем URL в элемент <p>
-        document.getElementById('url').textContent = currentURL;
+        function displayURL() {
+            const url = window.location.href;
+            document.getElementById('urlDisplay').innerText = url;
+        }
     </script>
+</head>
+<body onload="displayURL()">
+    <h1>Ваш URL:</h1>
+    <p id="urlDisplay"></p>
 </body>
 </html>
+
